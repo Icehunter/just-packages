@@ -16,7 +16,7 @@ const config = [
     input: 'src/lib/index.ts',
     output: {
       preserveModules: true,
-      dir: 'lib/esm',
+      dir: 'lib',
       format: 'esm',
       sourcemap: true
     },
@@ -26,8 +26,18 @@ const config = [
   {
     input: 'src/lib/index.ts',
     output: {
-      // preserveModules: true,
-      file: pkg.main,
+      preserveModules: true,
+      dir: 'lib-commonjs',
+      format: 'commonjs',
+      sourcemap: true
+    },
+    plugins,
+    external
+  },
+  {
+    input: 'src/lib/index.ts',
+    output: {
+      file: 'lib-amd/index.js',
       name: 'JustPackages',
       format: 'umd',
       sourcemap: true

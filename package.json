@@ -24,6 +24,7 @@
     "web-vitals": "0.2.4"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.0.1",
     "@storybook/addon-actions": "6.1.10",
     "@storybook/addon-essentials": "6.1.10",
     "@storybook/addon-links": "6.1.10",

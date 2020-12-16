@@ -1,5 +1,6 @@
 import React, { ButtonHTMLAttributes, CSSProperties, useMemo } from 'react';
 
+import { Engine } from '@babylonjs/core';
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * onClick handler, defaults to empty
@@ -8,6 +9,12 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: React.FC<IButtonProps> = (props) => {
+  const canvas = document.getElementById('root');
+
+  const engine = new Engine(canvas as HTMLCanvasElement);
+
+  console.log(engine);
+
   const {
     children,
     // eslint-disable-next-line @typescript-eslint/no-empty-function
