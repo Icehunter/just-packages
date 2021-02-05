@@ -5,7 +5,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
 export default {
-  title: 'Components/Button',
+  title: 'UI/Button',
   component: Button
 } as Meta;
 
@@ -17,7 +17,7 @@ Default.args = {};
 export const ClickHandler = Template.bind({});
 ClickHandler.args = {
   onClick: () => {
-    window.alert('clicked!')
+    window.alert('clicked!');
   }
 };
 

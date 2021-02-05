@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    <button
+      style="padding: 10px; border: 2px solid #61dafb; border-radius: 5px; text-transform: uppercase; color: black; cursor: pointer;"
+    >
+      Learning!!!
+    </button>
+  </div>
+</div>
+`;

@@ -15,8 +15,7 @@ module.exports = {
   },
   moduleDirectories: [...defaults.moduleDirectories, 'src'],
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
-    '^.+\\.(js|jsx)$': '<rootDir>/node_modules/babel-jest'
+    '^.+\\.(ts|tsx)$': 'ts-jest'
   },
   transformIgnorePatterns: [...defaults.transformIgnorePatterns],
   collectCoverageFrom: [
@@ -64,5 +63,5 @@ module.exports = {
       tsconfig: 'tsconfig.jest.json'
     }
   },
-  setupFilesAfterEnv: ['./jest.setup.js']
+  setupFilesAfterEnv: ['./jest.setup.ts']
 };

@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, CSSProperties, useMemo } from 'react';
+import React, { ButtonHTMLAttributes, CSSProperties, FC, useMemo } from 'react';
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
@@ -7,7 +7,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
-export const Button: React.FC<IButtonProps> = (props) => {
+export const Button: FC<IButtonProps> = (props) => {
   const {
     children,
     // eslint-disable-next-line @typescript-eslint/no-empty-function
